@@ -24,7 +24,5 @@ wget "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-sta
 
 chmod +x /tini
 
-apk add gnupg
 gpg --import </tmp/docker/tini.pubkey.gpg
 gpg --batch --verify /tini.asc /tini
-apk del gnupg
